@@ -38,6 +38,6 @@ if [ ! -f /mysql-configured ]; then
 	 touch /mysql-configured
 fi
 
-passwd -d root
+#passwd -d root
 
-/usr/bin/monit -d 10 -Ic /etc/monitrc
+/usr/bin/monit -d 10 -Ic /etc/monitrc &

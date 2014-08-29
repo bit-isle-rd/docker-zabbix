@@ -1,5 +1,8 @@
 FROM centos:centos6
-MAINTAINER Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>
+MAINTAINER Ikuo Kumagai <i-kumagai@bit-isle.co.jp>
+
+# Locale Change(JST)
+RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # Update base images.
 RUN yum distribution-synchronization -y
